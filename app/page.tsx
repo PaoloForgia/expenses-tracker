@@ -1,11 +1,7 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { monthName } from "@/utils/date";
 
-export default function HomePage() {
-  return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
-  );
-}
+const HomePage = () => {
+  return <>{monthName(2)}</>;
+};
+
+export default HomePage;
