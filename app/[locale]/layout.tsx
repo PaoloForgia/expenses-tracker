@@ -1,16 +1,20 @@
 import { WithChildren } from "@/types/props";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
-import { theme } from "../theme";
+import { theme } from "../../theme";
 
 export const metadata = {
   title: "Mantine Next.js template",
   description: "I am using Mantine with Next.js!",
 };
 
-const RootLayout = ({ children }: WithChildren) => {
+type Props = {
+  params: { locale: string };
+} & WithChildren;
+
+const RootLayout = ({ children, params: { locale } }: Props) => {
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
