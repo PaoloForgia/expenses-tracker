@@ -16,9 +16,13 @@ export const savings: Category = {
   expenses: [joinedSaving],
 };
 
-export const Expenses: Category = {
+export const expenses: Category = {
   categoryId: randomId(),
   categoryName: "Expenses",
   transactionType: "expense",
   expenses: [rent, insuranceHusband, insuranceWife],
 };
+
+const categories = [incomes, savings, expenses];
+
+export default categories;

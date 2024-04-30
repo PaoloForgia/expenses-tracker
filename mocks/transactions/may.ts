@@ -44,3 +44,14 @@ export const insuranceWifeMay: Transaction = {
   amount: 500,
   period: may,
 };
+
+const aprilTransactions = [
+  salaryHusbandMay,
+  salaryWifeMay,
+  joinedSavingMay,
+  rentMay,
+  insuranceHusbandMay,
+  insuranceWifeMay,
+];
+
+export default aprilTransactions;
