@@ -1,24 +1,24 @@
-export const January: Period = {
+export const january: Period = {
   month: 0,
   year: 2024,
 };
 
-export const February: Period = {
+export const february: Period = {
   month: 1,
   year: 2024,
 };
 
-export const March: Period = {
+export const march: Period = {
   month: 2,
   year: 2024,
 };
 
-export const April: Period = {
+export const april: Period = {
   month: 3,
   year: 2024,
 };
 
-export const May: Period = {
+export const may: Period = {
   month: 4,
   year: 2024,
 };
@@ -28,32 +28,32 @@ export const June: Period = {
   year: 2024,
 };
 
-export const July: Period = {
+export const july: Period = {
   month: 6,
   year: 2024,
 };
 
-export const August: Period = {
+export const august: Period = {
   month: 7,
   year: 2024,
 };
 
-export const September: Period = {
+export const september: Period = {
   month: 8,
   year: 2024,
 };
 
-export const October: Period = {
+export const october: Period = {
   month: 9,
   year: 2024,
 };
 
-export const November: Period = {
+export const november: Period = {
   month: 10,
   year: 2024,
 };
 
-export const December: Period = {
+export const december: Period = {
   month: 11,
   year: 2024,
 };
