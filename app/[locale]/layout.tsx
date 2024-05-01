@@ -1,5 +1,7 @@
+import BigScreenLayout from "@/components/Layout/BigScreenLayout";
 import { WithChildren } from "@/types/props";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import "./global.css";
 import "@mantine/core/styles.css";
 import { theme } from "../../theme";
 
@@ -21,7 +23,9 @@ const RootLayout = ({ children, params: { locale } }: Props) => {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no" />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <BigScreenLayout>{children}</BigScreenLayout>
+        </MantineProvider>
       </body>
     </html>
   );

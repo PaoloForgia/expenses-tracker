@@ -1,7 +1,10 @@
+export type CategoryColor = "green" | "blue" | "red" | "gold";
+
 export type Category = {
   categoryId: number;
   categoryName: string;
   transactionType: TransactionType;
+  color: CategoryColor;
   expenses: Expense[];
 };
 

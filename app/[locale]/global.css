@@ -1,0 +1,7 @@
+:root {
+  --background-color: #f8f9fa;
+}
+
+body {
+  --mantine-color-body: var(--background-color);
+}

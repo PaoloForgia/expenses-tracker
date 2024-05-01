@@ -1,0 +1,74 @@
+.categoryContainer {
+  --border-radius: 8px;
+
+  align-items: center;
+  position: relative;
+  padding: var(--mantine-spacing-md);
+  box-sizing: border-box;
+
+  $border: 5px;
+  background: var(--background-color);
+  background-clip: padding-box;
+  border: solid $border transparent;
+  border-radius: var(--border-radius);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+  }
+}
+
+.green {
+  &:before {
+    background: linear-gradient(
+      90deg,
+      rgba(76, 205, 153, 1) 0%,
+      rgba(0, 127, 115, 1) 50%,
+      rgba(0, 127, 116, 1) 75%,
+      rgba(0, 159, 194, 1) 100%
+    );
+  }
+}
+
+.blue {
+  &:before {
+    background: linear-gradient(
+      90deg,
+      rgba(76, 182, 205, 1) 0%,
+      rgba(0, 81, 127, 1) 50%,
+      rgba(0, 81, 127, 1) 75%,
+      rgba(8, 42, 92, 1) 100%
+    );
+  }
+}
+
+.red {
+  &:before {
+    background: linear-gradient(
+      90deg,
+      rgba(238, 151, 151, 1) 0%,
+      rgba(207, 76, 76, 1) 50%,
+      rgba(164, 53, 53, 1) 75%,
+      rgba(153, 18, 50, 1) 100%
+    );
+  }
+}
+
+.gold {
+  &:before {
+    background: linear-gradient(
+      90deg,
+      rgba(222, 113, 12, 1) 0%,
+      rgba(255, 224, 58, 1) 35%,
+      rgba(255, 203, 19, 1) 70%,
+      rgba(255, 107, 0, 1) 100%
+    );
+  }
+}
